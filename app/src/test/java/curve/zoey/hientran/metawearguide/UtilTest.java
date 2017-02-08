@@ -2,6 +2,7 @@ package curve.zoey.hientran.metawearguide; /**
  * Created by hientran on 2/2/17.
  */
 
+import org.apache.commons.lang3.ArrayUtils;
 import org.junit.Test;
 import curve.zoey.hientran.metawearguide.util.*;
 import static org.junit.Assert.assertArrayEquals;
@@ -87,5 +88,21 @@ public class UtilTest {
             filteredArr[i] = filter.getValue();
         }
         System.out.println("The array afater filter is: "+ Arrays.toString(filteredArr));
+    }
+
+    @Test
+    public void testfeaturesExtraction(){
+
+        Double[][] accels = {
+                {1.0, 2.0, 3.0},
+                {2.0, 3.0, 4.0},
+                {3.0, 4.0, 5.0},
+                {4.0, 5.0, 6.0},
+                {5.0, 6.0, 7.0}
+        };
+
+        Double[] array = util.featuresExtraction(accels, 1.0, 50);
+
+        System.out.println("The features set is: " + Arrays.toString(array));
     }
 }
