@@ -3,7 +3,7 @@ package curve.zoey.hientran.metawearguide; /**
  */
 
 import org.junit.Test;
-import curve.zoey.hientran.metawearguide.util.*d;
+import curve.zoey.hientran.metawearguide.util.*;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
@@ -86,6 +86,6 @@ public class UtilTest {
             filter.updateValue(array[i]);
             filteredArr[i] = filter.getValue();
         }
-        System.out.print("The array afater filter is: "+ Arrays.toString(filteredArr));
+        System.out.println("The array afater filter is: "+ Arrays.toString(filteredArr));
     }
 }
