@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MetawearGuide</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello">Hello World!</string>
+    <string name="acc_toggle">Toggle Accelerometer</string>
+    <string name="gyro_toggle">Toggle Gyroscope</string>
+    <string name="all_toggle">Toggle All Sensors</string>
+</resources>
